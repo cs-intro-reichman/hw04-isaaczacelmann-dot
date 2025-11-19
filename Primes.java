@@ -16,13 +16,16 @@ public class Primes {
         }
 
         int countPrimes = 0;
+        System.out.println(String.format("Prime numbers up to %d:", N));
+
         for (int i = 2; i < isPrime.length; i++) {
             if (isPrime[i] == 1) {
                 countPrimes++;
+                System.out.println(i);
             }
         }
         int percentage = (int) (((double) countPrimes / N) * 100);
-        System.out.println(String.format("There are %d primes between 2 and %d (%d%% are primes))", countPrimes, N,
+        System.out.println(String.format("There are %d primes between 2 and %d (%d%% are primes)", countPrimes, N,
                 percentage));
     }
 }
