@@ -44,12 +44,7 @@ public class ArrCharOps {
         if (index < 0 || index >= arr.length) {
             return 0;
         }
-        for (int i = 0; i < arr.length; i++) {
-            if (i == index) {
-                return arr[i];
-            }
-        }
-        return 0;
+        return arr[index];
     }
 
     /**
